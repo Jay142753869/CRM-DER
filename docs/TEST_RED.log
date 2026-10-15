@@ -1,0 +1,236 @@
+test_baseline_style_command_and_local_defaults (test_standalone.CommandTests) ... usage: python.exe -m unittest [-h] [-d DATASET] [--data-root DATA_ROOT]
+                              [--task {entity}] [--gpu GPU]
+                              [--n-hidden N_HIDDEN]
+                              [--train-history-len TRAIN_HISTORY_LEN]
+                              [--n-layers N_LAYERS] [--lr LR]
+                              [--weight-decay WEIGHT_DECAY]
+                              [--n-epochs N_EPOCHS]
+                              [--early-stopping-patience EARLY_STOPPING_PATIENCE]
+                              [--evaluate-every EVALUATE_EVERY]
+                              [--decoder {convtranse}] [--encoder {uvrgcn}]
+                              [--pre-type {TF}] [--pre-weight PRE_WEIGHT]
+                              [--layer-norm] [--no-layer-norm] [--add-query]
+                              [--no-query] [--add-static-graph]
+                              [--static-profile {baseline_threshold,fixed_weight,off}]
+                              [--static-weight STATIC_WEIGHT]
+                              [--static-score-chunk STATIC_SCORE_CHUNK]
+                              [--dropout DROPOUT] [--seed SEED]
+                              [--run-dir RUN_DIR] [--checkpoint CHECKPOINT]
+                              [--resume] [--test]
+                              [--common-state COMMON_STATE]
+                              [--export-common-state EXPORT_COMMON_STATE]
+                              [--cpu-threads CPU_THREADS]
+                              [--train-order {shuffled,chronological}]
+                              [--tie-policy {stable_id,torch_original}]
+                              [--report-subgroups] [--grad-norm GRAD_NORM]
+                              [--max-steps MAX_STEPS]
+                              [--max-valid-frames MAX_VALID_FRAMES]
+                              [--smoke-target-limit SMOKE_TARGET_LIMIT]
+                              [--memory-budget-gib MEMORY_BUDGET_GIB]
+                              [--time-unit TIME_UNIT]
+                              [--state-gate {input,global}]
+                              [--state-mode {on,off}]
+                              [--state-rank-k STATE_RANK_K]
+                              [--state-rank-v STATE_RANK_V]
+                              [--crm-hidden CRM_HIDDEN]
+                              [--crm-query-chunk CRM_QUERY_CHUNK]
+                              [--no-crm-checkpoint-chunks]
+                              [--gamma-subj-init GAMMA_SUBJ_INIT]
+                              [--enable-c2] [--c2-hidden C2_HIDDEN]
+                              [--c2-time-bias] [--use-long-slots]
+python.exe -m unittest: error: unrecognized arguments: --add_query --test-every 0 --run-name icews18_s42
+ERROR
+test_test_checkpoint_alias (test_standalone.CommandTests) ... usage: python.exe -m unittest [-h] [-d DATASET] [--data-root DATA_ROOT]
+                              [--task {entity}] [--gpu GPU]
+                              [--n-hidden N_HIDDEN]
+                              [--train-history-len TRAIN_HISTORY_LEN]
+                              [--n-layers N_LAYERS] [--lr LR]
+                              [--weight-decay WEIGHT_DECAY]
+                              [--n-epochs N_EPOCHS]
+                              [--early-stopping-patience EARLY_STOPPING_PATIENCE]
+                              [--evaluate-every EVALUATE_EVERY]
+                              [--decoder {convtranse}] [--encoder {uvrgcn}]
+                              [--pre-type {TF}] [--pre-weight PRE_WEIGHT]
+                              [--layer-norm] [--no-layer-norm] [--add-query]
+                              [--no-query] [--add-static-graph]
+                              [--static-profile {baseline_threshold,fixed_weight,off}]
+                              [--static-weight STATIC_WEIGHT]
+                              [--static-score-chunk STATIC_SCORE_CHUNK]
+                              [--dropout DROPOUT] [--seed SEED]
+                              [--run-dir RUN_DIR] [--checkpoint CHECKPOINT]
+                              [--resume] [--test]
+                              [--common-state COMMON_STATE]
+                              [--export-common-state EXPORT_COMMON_STATE]
+                              [--cpu-threads CPU_THREADS]
+                              [--train-order {shuffled,chronological}]
+                              [--tie-policy {stable_id,torch_original}]
+                              [--report-subgroups] [--grad-norm GRAD_NORM]
+                              [--max-steps MAX_STEPS]
+                              [--max-valid-frames MAX_VALID_FRAMES]
+                              [--smoke-target-limit SMOKE_TARGET_LIMIT]
+                              [--memory-budget-gib MEMORY_BUDGET_GIB]
+                              [--time-unit TIME_UNIT]
+                              [--state-gate {input,global}]
+                              [--state-mode {on,off}]
+                              [--state-rank-k STATE_RANK_K]
+                              [--state-rank-v STATE_RANK_V]
+                              [--crm-hidden CRM_HIDDEN]
+                              [--crm-query-chunk CRM_QUERY_CHUNK]
+                              [--no-crm-checkpoint-chunks]
+                              [--gamma-subj-init GAMMA_SUBJ_INIT]
+                              [--enable-c2] [--c2-hidden C2_HIDDEN]
+                              [--c2-time-bias] [--use-long-slots]
+python.exe -m unittest: error: unrecognized arguments: --load-model ./models/example/best.pt
+ERROR
+test_unsupported_modes_explain_the_limitation (test_standalone.CommandTests) ... ok
+test_all_six_local_train_valid_datasets (test_standalone.DataTests) ... ok
+test_changed_explicit_resume_mechanism_is_rejected (test_standalone.LifecycleTests) ... ERROR
+test_train_resume_and_minimal_test_restore_static_identity (test_standalone.LifecycleTests) ... ERROR
+test_extreme_logits_produce_finite_loss_and_gradients (test_standalone.NumericTests) ... FAIL
+
+======================================================================
+ERROR: test_baseline_style_command_and_local_defaults (test_standalone.CommandTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\improve-QDRL\CRM-DER\tests\test_standalone.py", line 58, in test_baseline_style_command_and_local_defaults
+    args = parse_opts(['-d', 'ICEWS18', '--train-history-len', '7', '--lr', '0.0005',
+  File "D:\improve-QDRL\CRM-DER\opt.py", line 75, in parse_opts
+    args = p.parse_args(argv)
+  File "C:\Users\Jay14\anaconda3\envs\qdrl\lib\argparse.py", line 1771, in parse_args
+    self.error(msg % ' '.join(argv))
+  File "C:\Users\Jay14\anaconda3\envs\qdrl\lib\argparse.py", line 2521, in error
+    self.exit(2, _('%(prog)s: error: %(message)s\n') % args)
+  File "C:\Users\Jay14\anaconda3\envs\qdrl\lib\argparse.py", line 2508, in exit
+    _sys.exit(status)
+SystemExit: 2
+
+======================================================================
+ERROR: test_test_checkpoint_alias (test_standalone.CommandTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\improve-QDRL\CRM-DER\tests\test_standalone.py", line 75, in test_test_checkpoint_alias
+    args = parse_opts(['--test', '--load-model', './models/example/best.pt'])
+  File "D:\improve-QDRL\CRM-DER\opt.py", line 75, in parse_opts
+    args = p.parse_args(argv)
+  File "C:\Users\Jay14\anaconda3\envs\qdrl\lib\argparse.py", line 1771, in parse_args
+    self.error(msg % ' '.join(argv))
+  File "C:\Users\Jay14\anaconda3\envs\qdrl\lib\argparse.py", line 2521, in error
+    self.exit(2, _('%(prog)s: error: %(message)s\n') % args)
+  File "C:\Users\Jay14\anaconda3\envs\qdrl\lib\argparse.py", line 2508, in exit
+    _sys.exit(status)
+SystemExit: 2
+
+======================================================================
+ERROR: test_changed_explicit_resume_mechanism_is_rejected (test_standalone.LifecycleTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jay14\anaconda3\envs\qdrl\lib\pathlib.py", line 1288, in mkdir
+    self._accessor.mkdir(self, mode)
+FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'C:\\Users\\Jay14\\AppData\\Local\\Packages\\sandbox.{96172003-2614-4b3f-a9a9-6982fed3cbbe}\\AC\\Temp\\tmp7uxmbkaj\\data\\TINY'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\improve-QDRL\CRM-DER\tests\test_standalone.py", line 151, in test_changed_explicit_resume_mechanism_is_rejected
+    data = fixture(root)
+  File "D:\improve-QDRL\CRM-DER\tests\test_standalone.py", line 28, in fixture
+    data.mkdir(parents=True)
+  File "C:\Users\Jay14\anaconda3\envs\qdrl\lib\pathlib.py", line 1292, in mkdir
+    self.parent.mkdir(parents=True, exist_ok=True)
+  File "C:\Users\Jay14\anaconda3\envs\qdrl\lib\pathlib.py", line 1288, in mkdir
+    self._accessor.mkdir(self, mode)
+PermissionError: [WinError 5] �ܾ����ʡ�: 'C:\\Users\\Jay14\\AppData\\Local\\Packages\\sandbox.{96172003-2614-4b3f-a9a9-6982fed3cbbe}\\AC\\Temp\\tmp7uxmbkaj\\data'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Jay14\anaconda3\envs\qdrl\lib\shutil.py", line 620, in _rmtree_unsafe
+    os.rmdir(path)
+PermissionError: [WinError 5] �ܾ����ʡ�: 'C:\\Users\\Jay14\\AppData\\Local\\Packages\\sandbox.{96172003-2614-4b3f-a9a9-6982fed3cbbe}\\AC\\Temp\\tmp7uxmbkaj'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\improve-QDRL\CRM-DER\tests\test_standalone.py", line 154, in test_changed_explicit_resume_mechanism_is_rejected
+    quiet_run(parse_opts(['-d', 'TINY', '--data-root', str(data), '--gpu', '-1',
+  File "C:\Users\Jay14\anaconda3\envs\qdrl\lib\tempfile.py", line 836, in __exit__
+    self.cleanup()
+  File "C:\Users\Jay14\anaconda3\envs\qdrl\lib\tempfile.py", line 840, in cleanup
+    self._rmtree(self.name)
+  File "C:\Users\Jay14\anaconda3\envs\qdrl\lib\tempfile.py", line 822, in _rmtree
+    _shutil.rmtree(name, onerror=onerror)
+  File "C:\Users\Jay14\anaconda3\envs\qdrl\lib\shutil.py", line 740, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "C:\Users\Jay14\anaconda3\envs\qdrl\lib\shutil.py", line 622, in _rmtree_unsafe
+    onerror(os.rmdir, path, sys.exc_info())
+  File "C:\Users\Jay14\anaconda3\envs\qdrl\lib\tempfile.py", line 808, in onerror
+    _resetperms(path)
+  File "C:\Users\Jay14\anaconda3\envs\qdrl\lib\tempfile.py", line 280, in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+  File "C:\Users\Jay14\anaconda3\envs\qdrl\lib\tempfile.py", line 271, in _dont_follow_symlinks
+    func(path, *args)
+PermissionError: [WinError 5] �ܾ����ʡ�: 'C:\\Users\\Jay14\\AppData\\Local\\Packages\\sandbox.{96172003-2614-4b3f-a9a9-6982fed3cbbe}\\AC\\Temp\\tmp7uxmbkaj'
+
+======================================================================
+ERROR: test_train_resume_and_minimal_test_restore_static_identity (test_standalone.LifecycleTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jay14\anaconda3\envs\qdrl\lib\pathlib.py", line 1288, in mkdir
+    self._accessor.mkdir(self, mode)
+FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'C:\\Users\\Jay14\\AppData\\Local\\Packages\\sandbox.{96172003-2614-4b3f-a9a9-6982fed3cbbe}\\AC\\Temp\\tmphd5br9m7\\data\\TINY'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\improve-QDRL\CRM-DER\tests\test_standalone.py", line 114, in test_train_resume_and_minimal_test_restore_static_identity
+    data = fixture(root)
+  File "D:\improve-QDRL\CRM-DER\tests\test_standalone.py", line 28, in fixture
+    data.mkdir(parents=True)
+  File "C:\Users\Jay14\anaconda3\envs\qdrl\lib\pathlib.py", line 1292, in mkdir
+    self.parent.mkdir(parents=True, exist_ok=True)
+  File "C:\Users\Jay14\anaconda3\envs\qdrl\lib\pathlib.py", line 1288, in mkdir
+    self._accessor.mkdir(self, mode)
+PermissionError: [WinError 5] �ܾ����ʡ�: 'C:\\Users\\Jay14\\AppData\\Local\\Packages\\sandbox.{96172003-2614-4b3f-a9a9-6982fed3cbbe}\\AC\\Temp\\tmphd5br9m7\\data'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Jay14\anaconda3\envs\qdrl\lib\shutil.py", line 620, in _rmtree_unsafe
+    os.rmdir(path)
+PermissionError: [WinError 5] �ܾ����ʡ�: 'C:\\Users\\Jay14\\AppData\\Local\\Packages\\sandbox.{96172003-2614-4b3f-a9a9-6982fed3cbbe}\\AC\\Temp\\tmphd5br9m7'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\improve-QDRL\CRM-DER\tests\test_standalone.py", line 146, in test_train_resume_and_minimal_test_restore_static_identity
+    quiet_run(smoke_args(data, full_dir))
+  File "C:\Users\Jay14\anaconda3\envs\qdrl\lib\tempfile.py", line 836, in __exit__
+    self.cleanup()
+  File "C:\Users\Jay14\anaconda3\envs\qdrl\lib\tempfile.py", line 840, in cleanup
+    self._rmtree(self.name)
+  File "C:\Users\Jay14\anaconda3\envs\qdrl\lib\tempfile.py", line 822, in _rmtree
+    _shutil.rmtree(name, onerror=onerror)
+  File "C:\Users\Jay14\anaconda3\envs\qdrl\lib\shutil.py", line 740, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "C:\Users\Jay14\anaconda3\envs\qdrl\lib\shutil.py", line 622, in _rmtree_unsafe
+    onerror(os.rmdir, path, sys.exc_info())
+  File "C:\Users\Jay14\anaconda3\envs\qdrl\lib\tempfile.py", line 808, in onerror
+    _resetperms(path)
+  File "C:\Users\Jay14\anaconda3\envs\qdrl\lib\tempfile.py", line 280, in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+  File "C:\Users\Jay14\anaconda3\envs\qdrl\lib\tempfile.py", line 271, in _dont_follow_symlinks
+    func(path, *args)
+PermissionError: [WinError 5] �ܾ����ʡ�: 'C:\\Users\\Jay14\\AppData\\Local\\Packages\\sandbox.{96172003-2614-4b3f-a9a9-6982fed3cbbe}\\AC\\Temp\\tmphd5br9m7'
+
+======================================================================
+FAIL: test_extreme_logits_produce_finite_loss_and_gradients (test_standalone.NumericTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\improve-QDRL\CRM-DER\tests\test_standalone.py", line 89, in test_extreme_logits_produce_finite_loss_and_gradients
+    self.assertTrue(torch.isfinite(loss).item())
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 7 tests in 3.414s
+
+FAILED (failures=1, errors=4)

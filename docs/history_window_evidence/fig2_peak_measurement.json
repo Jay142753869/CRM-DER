@@ -1,0 +1,254 @@
+{
+  "source": "QDRL_page14.png",
+  "source_size": [
+    1452,
+    2200
+  ],
+  "curve": "MRR (tab10 blue)",
+  "datasets": {
+    "ICEWS14": {
+      "markers": 6,
+      "points": [
+        {
+          "x_px": 246,
+          "y_px": 1146.5
+        },
+        {
+          "x_px": 260,
+          "y_px": 1138.5
+        },
+        {
+          "x_px": 288,
+          "y_px": 1133.5
+        },
+        {
+          "x_px": 338,
+          "y_px": 1133.5
+        },
+        {
+          "x_px": 451,
+          "y_px": 1132.0
+        },
+        {
+          "x_px": 663,
+          "y_px": 1134.0
+        }
+      ],
+      "gaps_px": [
+        14,
+        28,
+        50,
+        113,
+        212
+      ],
+      "px_per_unit": 7.067,
+      "grid": [
+        1.0,
+        2.98,
+        6.94,
+        14.02,
+        30.01,
+        60.01
+      ],
+      "grid_rounded": [
+        1,
+        3,
+        7,
+        14,
+        30,
+        60
+      ],
+      "grid_max_deviation": 0.06,
+      "peak_index": 4,
+      "peak_grid": 30.01,
+      "peak_x_px": 451,
+      "peak_y_px": 1132.0,
+      "runner_up_y_px": 1133.5,
+      "peak_margin_px": 1.5,
+      "y_spread_px": 14.5
+    },
+    "ICEWS05-15": {
+      "markers": 6,
+      "points": [
+        {
+          "x_px": 782,
+          "y_px": 1148.0
+        },
+        {
+          "x_px": 796,
+          "y_px": 1134.5
+        },
+        {
+          "x_px": 825,
+          "y_px": 1131.0
+        },
+        {
+          "x_px": 874,
+          "y_px": 1129.0
+        },
+        {
+          "x_px": 987,
+          "y_px": 1130.5
+        },
+        {
+          "x_px": 1199,
+          "y_px": 1133.0
+        }
+      ],
+      "gaps_px": [
+        14,
+        29,
+        49,
+        113,
+        212
+      ],
+      "px_per_unit": 7.067,
+      "grid": [
+        1.0,
+        2.98,
+        7.08,
+        14.02,
+        30.01,
+        60.01
+      ],
+      "grid_rounded": [
+        1,
+        3,
+        7,
+        14,
+        30,
+        60
+      ],
+      "grid_max_deviation": 0.08,
+      "peak_index": 3,
+      "peak_grid": 14.02,
+      "peak_x_px": 874,
+      "peak_y_px": 1129.0,
+      "runner_up_y_px": 1130.5,
+      "peak_margin_px": 1.5,
+      "y_spread_px": 19.0
+    },
+    "ICEWS18": {
+      "markers": 6,
+      "points": [
+        {
+          "x_px": 246,
+          "y_px": 1546.0
+        },
+        {
+          "x_px": 260,
+          "y_px": 1534.5
+        },
+        {
+          "x_px": 288,
+          "y_px": 1533.5
+        },
+        {
+          "x_px": 338,
+          "y_px": 1535.5
+        },
+        {
+          "x_px": 450,
+          "y_px": 1534.0
+        },
+        {
+          "x_px": 663,
+          "y_px": 1535.5
+        }
+      ],
+      "gaps_px": [
+        14,
+        28,
+        50,
+        112,
+        213
+      ],
+      "px_per_unit": 7.1,
+      "grid": [
+        1.0,
+        2.97,
+        6.92,
+        13.96,
+        29.73,
+        59.73
+      ],
+      "grid_rounded": [
+        1,
+        3,
+        7,
+        14,
+        30,
+        60
+      ],
+      "grid_max_deviation": 0.27,
+      "peak_index": 2,
+      "peak_grid": 6.92,
+      "peak_x_px": 288,
+      "peak_y_px": 1533.5,
+      "runner_up_y_px": 1534.0,
+      "peak_margin_px": 0.5,
+      "y_spread_px": 12.5
+    },
+    "YAGO": {
+      "markers": 6,
+      "points": [
+        {
+          "x_px": 793,
+          "y_px": 1548.5
+        },
+        {
+          "x_px": 805,
+          "y_px": 1517.0
+        },
+        {
+          "x_px": 833,
+          "y_px": 1515.0
+        },
+        {
+          "x_px": 882,
+          "y_px": 1524.0
+        },
+        {
+          "x_px": 992,
+          "y_px": 1533.5
+        },
+        {
+          "x_px": 1200,
+          "y_px": 1544.5
+        }
+      ],
+      "gaps_px": [
+        12,
+        28,
+        49,
+        110,
+        208
+      ],
+      "px_per_unit": 6.933,
+      "grid": [
+        1.0,
+        2.73,
+        6.77,
+        13.84,
+        29.7,
+        59.7
+      ],
+      "grid_rounded": [
+        1,
+        3,
+        7,
+        14,
+        30,
+        60
+      ],
+      "grid_max_deviation": 0.3,
+      "peak_index": 2,
+      "peak_grid": 6.77,
+      "peak_x_px": 833,
+      "peak_y_px": 1515.0,
+      "runner_up_y_px": 1517.0,
+      "peak_margin_px": 2.0,
+      "y_spread_px": 33.5
+    }
+  }
+}

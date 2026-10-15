@@ -1,0 +1,13 @@
+test_history_defaults_follow_dataset_evidence (test_standalone.CommandTests) ... 
+======================================================================
+FAIL: test_history_defaults_follow_dataset_evidence (test_standalone.CommandTests) (dataset='ICEWS05-15')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\improve-QDRL\CRM-DER\tests\test_standalone.py", line 60, in test_history_defaults_follow_dataset_evidence
+    self.assertEqual(parse_opts(['-d', dataset]).train_history_len, expected)
+AssertionError: 7 != 14
+
+----------------------------------------------------------------------
+Ran 1 test in 0.056s
+
+FAILED (failures=1)

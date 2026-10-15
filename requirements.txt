@@ -1,0 +1,6 @@
+# Verified in the existing Conda environment qdrl (Python 3.8.20).
+# Keep the installed CUDA build when it already works; no reinstall is needed.
+torch>=1.13,<2.0
+dgl>=1.1,<2.0
+numpy>=1.21,<2.0
+tqdm>=4.60

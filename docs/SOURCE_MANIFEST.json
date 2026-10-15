@@ -1,0 +1,98 @@
+{
+  "model": "CRM-DER",
+  "source_model": "R02 crm-der-v2",
+  "copied_before_packaging_changes": {
+    "main.py": {
+      "source": "D:\\improve-QDRL\\report\\review_20261013\\rearchitecture_panel\\R02\\implementation\\QDRL\\main.py",
+      "sha256": "02c16810a8db0f72dbe5c46d30aaa6718866eaff04ff465e8ffeb73b0979ccea"
+    },
+    "opt.py": {
+      "source": "D:\\improve-QDRL\\report\\review_20261013\\rearchitecture_panel\\R02\\implementation\\QDRL\\opt.py",
+      "sha256": "af6981b3e0e14d0e1ab199980cc8025b6d04b45d8f87beb7bd93d0e2deb5608b"
+    },
+    "src/__init__.py": {
+      "source": "D:\\improve-QDRL\\report\\review_20261013\\rearchitecture_panel\\R02\\implementation\\QDRL\\src\\__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "src/backbone/__init__.py": {
+      "source": "D:\\improve-QDRL\\report\\review_20261013\\rearchitecture_panel\\R02\\implementation\\QDRL\\src\\backbone\\__init__.py",
+      "sha256": "13fedabcaf2f45278abe55d5cf03647384ec67f021fcc7ff9e294ce6b9bdc9a0"
+    },
+    "src/backbone/config.py": {
+      "source": "D:\\improve-QDRL\\report\\review_20261013\\rearchitecture_panel\\R02\\implementation\\QDRL\\src\\backbone\\config.py",
+      "sha256": "3476b602ca192ec81c99a627c0177852d4a6fe0757f64449896707f6966087fd"
+    },
+    "src/backbone/decoder.py": {
+      "source": "D:\\improve-QDRL\\report\\review_20261013\\rearchitecture_panel\\R02\\implementation\\QDRL\\src\\backbone\\decoder.py",
+      "sha256": "6e78c4aac5d84128fb47d21368a59c3218046ad9b290458f1af886ce4c07cefa"
+    },
+    "src/backbone/encoder.py": {
+      "source": "D:\\improve-QDRL\\report\\review_20261013\\rearchitecture_panel\\R02\\implementation\\QDRL\\src\\backbone\\encoder.py",
+      "sha256": "a595acffcee393564e57d1a5ac23451f7d546d0b19bf6a935e29cc27dcace7ed"
+    },
+    "src/backbone/graph.py": {
+      "source": "D:\\improve-QDRL\\report\\review_20261013\\rearchitecture_panel\\R02\\implementation\\QDRL\\src\\backbone\\graph.py",
+      "sha256": "9384da2443a09aca82be7babf4736b31d44fac798d86fcc7ca32c3bec0e13574"
+    },
+    "src/backbone/initialization.py": {
+      "source": "D:\\improve-QDRL\\report\\review_20261013\\rearchitecture_panel\\R02\\implementation\\QDRL\\src\\backbone\\initialization.py",
+      "sha256": "9be6f648c2ab68def8604e5b5955635b69677d35b981734d38aabee3aa52cb50"
+    },
+    "src/backbone/layers.py": {
+      "source": "D:\\improve-QDRL\\report\\review_20261013\\rearchitecture_panel\\R02\\implementation\\QDRL\\src\\backbone\\layers.py",
+      "sha256": "01d53edab404714656aa55b9b9fe1000a2b6e911ed098bbc9a97d0b590d20b98"
+    },
+    "src/backbone/model.py": {
+      "source": "D:\\improve-QDRL\\report\\review_20261013\\rearchitecture_panel\\R02\\implementation\\QDRL\\src\\backbone\\model.py",
+      "sha256": "c2358bd623fce9e464000fa795b4785e8ee3c0782592fdcfd5749014e44f2f3a"
+    },
+    "src/backbone/query.py": {
+      "source": "D:\\improve-QDRL\\report\\review_20261013\\rearchitecture_panel\\R02\\implementation\\QDRL\\src\\backbone\\query.py",
+      "sha256": "2c56480402fddd48e1c9ec7a5a3c8b0c28307f2b99451eac556b7c4bdb30e2d7"
+    },
+    "src/c2/__init__.py": {
+      "source": "D:\\improve-QDRL\\report\\review_20261013\\rearchitecture_panel\\R02\\implementation\\QDRL\\src\\c2\\__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "src/c2/history_selector.py": {
+      "source": "D:\\improve-QDRL\\report\\review_20261013\\rearchitecture_panel\\R02\\implementation\\QDRL\\src\\c2\\history_selector.py",
+      "sha256": "ba60fcd85f6ac9c543c4fa2eabdf40080daa58c07df8f2315a51b493e427fb93"
+    },
+    "src/crm/__init__.py": {
+      "source": "D:\\improve-QDRL\\report\\review_20261013\\rearchitecture_panel\\R02\\implementation\\QDRL\\src\\crm\\__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "src/crm/core.py": {
+      "source": "D:\\improve-QDRL\\report\\review_20261013\\rearchitecture_panel\\R02\\implementation\\QDRL\\src\\crm\\core.py",
+      "sha256": "c7ff5c1e2185dd30b3ee26f77a8a51a82e9953407cbd3c2c7ce1d39c618c47a9"
+    },
+    "src/crm/factory.py": {
+      "source": "D:\\improve-QDRL\\report\\review_20261013\\rearchitecture_panel\\R02\\implementation\\QDRL\\src\\crm\\factory.py",
+      "sha256": "5fafffd0e3b75239fa48d4b97db8a08d1ab295ced59ded4aa5c553caeb9522d3"
+    },
+    "src/crm/frame_groups.py": {
+      "source": "D:\\improve-QDRL\\report\\review_20261013\\rearchitecture_panel\\R02\\implementation\\QDRL\\src\\crm\\frame_groups.py",
+      "sha256": "b5d4f2de2adb723f8649eb0052eded66784e7f24f9773b5820b7df094c7e5451"
+    },
+    "src/crm/model.py": {
+      "source": "D:\\improve-QDRL\\report\\review_20261013\\rearchitecture_panel\\R02\\implementation\\QDRL\\src\\crm\\model.py",
+      "sha256": "744ead8810b83e05fa94c7200a437682130b749559fbf53aeda095df5b40f018"
+    },
+    "src/data.py": {
+      "source": "D:\\improve-QDRL\\report\\review_20261013\\rearchitecture_panel\\R02\\implementation\\QDRL\\src\\data.py",
+      "sha256": "186acc9cbd1f380e67e204f379e4559e76f5190d49df0552cd2152612559afc8"
+    },
+    "src/evaluation.py": {
+      "source": "D:\\improve-QDRL\\report\\review_20261013\\rearchitecture_panel\\R02\\implementation\\QDRL\\src\\evaluation.py",
+      "sha256": "db04e50a926edc658beeaf6a7cf6fd3ac9298ae1f28cd25dd9d0fc3e709f1dc5"
+    },
+    "src/runtime.py": {
+      "source": "D:\\improve-QDRL\\report\\review_20261013\\rearchitecture_panel\\R02\\implementation\\QDRL\\src\\runtime.py",
+      "sha256": "f9ae6cf13aa159d4d54aa0f17d13b49353955d0d77503424cd82364d32ce3eb1"
+    },
+    "src/trainer.py": {
+      "source": "D:\\improve-QDRL\\report\\review_20261013\\rearchitecture_panel\\R02\\implementation\\QDRL\\src\\trainer.py",
+      "sha256": "7abd7f0f12c5c1c3f8bf91d88cf42b94196554da4c59212178429dc183e84f8c"
+    }
+  }
+}

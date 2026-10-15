@@ -1,0 +1,239 @@
+{
+  "ICEWS14": {
+    "train.txt": {
+      "source": "D:\\improve-QDRL\\QDRL-unified-research\\QDRL\\data\\ICEWS14\\train.txt",
+      "sha256": "228da10c44ae0a5babc439c76e063ee8094352da7270b299b0b0a6778cddd0f4",
+      "bytes": 970796
+    },
+    "valid.txt": {
+      "source": "D:\\improve-QDRL\\QDRL-main-new\\QDRL\\data\\ICEWS14\\valid.txt",
+      "sha256": "b046fe729601246f0b52fceff371e7cb668b63669aee812ddf392cad4fcd8196",
+      "bytes": 112855
+    },
+    "test.txt": {
+      "source": "D:\\improve-QDRL\\QDRL-main-new\\QDRL\\data\\ICEWS14\\test.txt",
+      "sha256": "1ce0a75fbdc1d1e041efe290f44948722327c65a9ea09a728060b2c34d3474bd",
+      "bytes": 98434
+    },
+    "entity2id.txt": {
+      "source": "D:\\improve-QDRL\\QDRL-main-new\\QDRL\\data\\ICEWS14\\entity2id.txt",
+      "sha256": "0251b09f1c2e56cdc5506f9d7f83e7a88d5d54c3df25609ae8ce4edb7fb3e573",
+      "bytes": 198027
+    },
+    "relation2id.txt": {
+      "source": "D:\\improve-QDRL\\QDRL-main-new\\QDRL\\data\\ICEWS14\\relation2id.txt",
+      "sha256": "32fcce0906d05205824f03e980981436a71a85feba72a817f5291e4afda9d04e",
+      "bytes": 7626
+    },
+    "stat.txt": {
+      "source": "D:\\improve-QDRL\\QDRL-main-new\\QDRL\\data\\ICEWS14\\stat.txt",
+      "sha256": "590d6632d8efd57bdd13dcab133dc0fcd848103f651766fe47ba4316a1db2547",
+      "bytes": 10
+    },
+    "e-w-graph-llm.txt": {
+      "source": "D:\\improve-QDRL\\QDRL-main-new\\QDRL\\data\\ICEWS14\\e-w-graph-llm.txt",
+      "sha256": "e3dca418e07458c5fa8ce8ab92b81236c284da6566db4fd42aa1d90e0b0ea656",
+      "bytes": 241981
+    },
+    "word2id_llm.txt": {
+      "source": "D:\\improve-QDRL\\QDRL-main-new\\QDRL\\data\\ICEWS14\\word2id_llm.txt",
+      "sha256": "73b8eb82c2f22437abc87ce06ca19deee2083cd6f6d537bc2c1d62a94d40b042",
+      "bytes": 72161
+    },
+    "word2id.txt": {
+      "source": "D:\\improve-QDRL\\QDRL-main-new\\QDRL\\data\\ICEWS14\\word2id.txt",
+      "sha256": "87ca6a79565210ac931ee50e34194c18e2134807582430a127121b5b2c8b5bac",
+      "bytes": 81043
+    }
+  },
+  "ICEWS18": {
+    "train.txt": {
+      "source": "D:\\improve-QDRL\\QDRL-unified-research\\QDRL\\data\\ICEWS18\\train.txt",
+      "sha256": "019cfba096e15abae04e8d8d6f4dbeda2add15f53826681702f25298a9fbc7bf",
+      "bytes": 8673522
+    },
+    "valid.txt": {
+      "source": "D:\\improve-QDRL\\QDRL-unified-research\\QDRL\\data\\ICEWS18\\valid.txt",
+      "sha256": "aa9966e928768ad3a9fd28c7fe2c078458ec1caa523fc0ddf9d0a38ece349c50",
+      "bytes": 1077693
+    },
+    "test.txt": {
+      "source": "D:\\improve-QDRL\\QDRL-unified-research\\QDRL\\data\\ICEWS18\\test.txt",
+      "sha256": "a00d46f993557cf78a8823b0c3a7b3b135f40ffa74150ee8f795794e2b536e33",
+      "bytes": 1162970
+    },
+    "entity2id.txt": {
+      "source": "D:\\improve-QDRL\\QDRL-unified-research\\QDRL\\data\\ICEWS18\\entity2id.txt",
+      "sha256": "ba2e7a66411cfc53517f08151124a3d36249cd70dfdcf3bab03b64f1300614a3",
+      "bytes": 674196
+    },
+    "relation2id.txt": {
+      "source": "D:\\improve-QDRL\\QDRL-main-new\\QDRL\\data\\ICEWS18\\relation2id.txt",
+      "sha256": "8d513a2bb23c4c00f16caa3f7a8b9ea7fbdfbee14508c046621e76e1ff50585b",
+      "bytes": 8772
+    },
+    "stat.txt": {
+      "source": "D:\\improve-QDRL\\QDRL-main-new\\QDRL\\data\\ICEWS18\\stat.txt",
+      "sha256": "0f198e1b76c90bf39428bdd9eb41fe3c84ef287f93f9934d478cf068b0794690",
+      "bytes": 11
+    },
+    "e-w-graph-llm.txt": {
+      "source": "D:\\improve-QDRL\\QDRL-unified-research\\QDRL\\data\\ICEWS18\\e-w-graph-llm.txt",
+      "sha256": "20a46d4ba819fa732381d7d84e4c4a77c3e1bb64b3b2d0da3766f9b97417fabb",
+      "bytes": 861320
+    },
+    "word2id.txt": {
+      "source": "D:\\improve-QDRL\\QDRL-main-new\\QDRL\\data\\ICEWS18\\word2id.txt",
+      "sha256": "f9e691135ab4c9b18539905159725a7bb2e6c9111f7bab9265957a5abe0a6c05",
+      "bytes": 211198
+    }
+  },
+  "ICEWS05-15": {
+    "train.txt": {
+      "source": "D:\\improve-QDRL\\QDRL-unified-research\\QDRL\\data\\ICEWS05-15\\train.txt",
+      "sha256": "fc1cfb55a08e6c08b08f67b00aa10ca2f068a0122cc48242f2bf7ff0b468b7e0",
+      "bytes": 5001347
+    },
+    "valid.txt": {
+      "source": "D:\\improve-QDRL\\QDRL-unified-research\\QDRL\\data\\ICEWS05-15\\valid.txt",
+      "sha256": "3e001c4452922d0be96264549b9497285bbfe71bda6cae6aaf1fd9d212c286be",
+      "bytes": 650903
+    },
+    "test.txt": {
+      "source": "D:\\improve-QDRL\\QDRL-unified-research\\QDRL\\data\\ICEWS05-15\\test.txt",
+      "sha256": "3a62ae8edf4265fa6cce3e3997894a565b85b9349f0f77ad19f2742df240ea8e",
+      "bytes": 648685
+    },
+    "entity2id.txt": {
+      "source": "D:\\improve-QDRL\\QDRL-main-new\\QDRL\\data\\ICEWS05-15\\entity2id.txt",
+      "sha256": "cdbdf157aa24aa4be2ec44d5ded6ebb48b087e287e9550867e60d97547a29edf",
+      "bytes": 300121
+    },
+    "relation2id.txt": {
+      "source": "D:\\improve-QDRL\\QDRL-main-new\\QDRL\\data\\ICEWS05-15\\relation2id.txt",
+      "sha256": "8b1a98961005e80b84fc1602b0764912ba64781361cde126bbc9d4aab85b8e85",
+      "bytes": 8521
+    },
+    "stat.txt": {
+      "source": "D:\\improve-QDRL\\QDRL-main-new\\QDRL\\data\\ICEWS05-15\\stat.txt",
+      "sha256": "2274a315b1019de6ec3c07298313d8877174985314c14b79d449e813229a602c",
+      "bytes": 11
+    },
+    "e-w-graph-llm.txt": {
+      "source": "D:\\improve-QDRL\\QDRL-main-new\\QDRL\\data\\ICEWS05-15\\e-w-graph-llm.txt",
+      "sha256": "47e1a0e9e47551397ee911a8e7c0273a2b3dbd9c28f5094094aeec62e305a4bd",
+      "bytes": 382969
+    },
+    "word2id.txt": {
+      "source": "D:\\improve-QDRL\\QDRL-main-new\\QDRL\\data\\ICEWS05-15\\word2id.txt",
+      "sha256": "3bc3f796bfa4ce1a51593f4f9c67dd9f838d6ec6905545741d204b5894e12e04",
+      "bytes": 126855
+    }
+  },
+  "GDELT": {
+    "train.txt": {
+      "source": "D:\\improve-QDRL\\QDRL-unified-research\\QDRL\\data\\GDELT\\train.txt",
+      "sha256": "85d64f4c4db6c0e280334af4a81d1b8ca518667d41e1a4c236e1dca82454863c",
+      "bytes": 41400721
+    },
+    "valid.txt": {
+      "source": "D:\\improve-QDRL\\QDRL-unified-research\\QDRL\\data\\GDELT\\valid.txt",
+      "sha256": "dc287c1a674d6df5765d537b1c0e0f873492e59c22ba62c795bc617f8eb08272",
+      "bytes": 5761141
+    },
+    "test.txt": {
+      "source": "D:\\improve-QDRL\\QDRL-unified-research\\QDRL\\data\\GDELT\\test.txt",
+      "sha256": "8821082240448adbc4f718a2702fdff51a1c3f1264f14d1ff74883378063f851",
+      "bytes": 7363889
+    },
+    "entity2id.txt": {
+      "source": "D:\\improve-QDRL\\QDRL-main-new\\QDRL\\data\\GDELT\\entity2id.txt",
+      "sha256": "df33f0045cf7e05af6e4b9263bcb78a0fe16092a28f43a435d8040329ec57176",
+      "bytes": 238642
+    },
+    "relation2id.txt": {
+      "source": "D:\\improve-QDRL\\QDRL-main-new\\QDRL\\data\\GDELT\\relation2id.txt",
+      "sha256": "0fdc8e6edea4868deb646b17e4b3e9682b2e28f6bf8c64bc0483cc2dcc2d70d1",
+      "bytes": 1909
+    },
+    "stat.txt": {
+      "source": "D:\\improve-QDRL\\QDRL-main-new\\QDRL\\data\\GDELT\\stat.txt",
+      "sha256": "1912b3088232ea6823394ccbd58ccdaa72eb6bf5429e592666177be6e3fe8ef7",
+      "bytes": 10
+    },
+    "e-w-graph-llm.txt": {
+      "source": "D:\\improve-QDRL\\QDRL-main-new\\QDRL\\data\\GDELT\\e-w-graph-llm.txt",
+      "sha256": "124b7d09f116f0f1777f32db7311bf1fcbb94e7d387cf3491b29f8b1fab8d15a",
+      "bytes": 307466
+    }
+  },
+  "YAGO": {
+    "train.txt": {
+      "source": "D:\\improve-QDRL\\QDRL-unified-research\\QDRL\\data\\YAGO\\train.txt",
+      "sha256": "31f78c30627ffe143940a5dadf06562602944e58f1c766481e894a366561f7ec",
+      "bytes": 2843046
+    },
+    "valid.txt": {
+      "source": "D:\\improve-QDRL\\QDRL-main-new\\QDRL\\data\\YAGO\\valid.txt",
+      "sha256": "c99d9d520264a9f0f8ef5774436f0d3941fbb3637181b6f2ad0dd665da9d2bb2",
+      "bytes": 348037
+    },
+    "test.txt": {
+      "source": "D:\\improve-QDRL\\QDRL-main-new\\QDRL\\data\\YAGO\\test.txt",
+      "sha256": "9b2c808c89f9045ddbc92983b84e88333fa1ce695abacd4f2531d47d9df5248a",
+      "bytes": 356959
+    },
+    "entity2id.txt": {
+      "source": "D:\\improve-QDRL\\QDRL-main-new\\QDRL\\data\\YAGO\\entity2id.txt",
+      "sha256": "3a5482d19f80b3936ca735ea105db799f5c500b170c57f7a59f0ea2650231789",
+      "bytes": 494943
+    },
+    "relation2id.txt": {
+      "source": "D:\\improve-QDRL\\QDRL-main-new\\QDRL\\data\\YAGO\\relation2id.txt",
+      "sha256": "83e460205fa11720980c814aa99d70b4ec42ff9571f7ce9915390e262fc8dc34",
+      "bytes": 140
+    },
+    "stat.txt": {
+      "source": "D:\\improve-QDRL\\QDRL-main-new\\QDRL\\data\\YAGO\\stat.txt",
+      "sha256": "49cf9bb1e0340938ab7da557e7c50168d05a8ecdf1207c9425cb1b041f903eed",
+      "bytes": 13
+    },
+    "e-w-graph-llm.txt": {
+      "source": "D:\\improve-QDRL\\QDRL-main-new\\QDRL\\data\\YAGO\\e-w-graph-llm.txt",
+      "sha256": "b50d655194548c86e66ea9591aa21433637b1c2e8600908254e975eac0fdb5b3",
+      "bytes": 148460
+    }
+  },
+  "WIKI": {
+    "train.txt": {
+      "source": "D:\\improve-QDRL\\QDRL-unified-research\\QDRL\\data\\WIKI\\train.txt",
+      "sha256": "ea9bdc1ee6c2fbfd5e138004271579bf7c7eaef127c089796b396cc2abb1307e",
+      "bytes": 9256586
+    },
+    "valid.txt": {
+      "source": "D:\\improve-QDRL\\QDRL-unified-research\\QDRL\\data\\WIKI\\valid.txt",
+      "sha256": "d9fb60e43b9e6ed970c6c63f1252d2bb5b3ed60eb1384a51e4b771d624350663",
+      "bytes": 1256583
+    },
+    "test.txt": {
+      "source": "D:\\improve-QDRL\\QDRL-unified-research\\QDRL\\data\\WIKI\\test.txt",
+      "sha256": "3e70736c25102f85faac7e0763263d67b113a3698e71efac72bb4dc2f84c9d79",
+      "bytes": 1176440
+    },
+    "entity2id.txt": {
+      "source": "D:\\improve-QDRL\\QDRL-unified-research\\QDRL\\data\\WIKI\\entity2id.txt",
+      "sha256": "307628d198b9369b650d46bb88980b38ed0957a9e8148227c94907f9b2804f01",
+      "bytes": 166023
+    },
+    "relation2id.txt": {
+      "source": "D:\\improve-QDRL\\QDRL-unified-research\\QDRL\\data\\WIKI\\relation2id.txt",
+      "sha256": "50e6d3c632dde882c8a84aece1eda1f640f4a79a184033eb0941c10dad90e517",
+      "bytes": 178
+    },
+    "stat.txt": {
+      "source": "D:\\improve-QDRL\\QDRL-unified-research\\QDRL\\data\\WIKI\\stat.txt",
+      "sha256": "6dc7a849dd77bbb4a88220d34636ded1f7fb879c6d4e8a0bc74bc1ae99fe146f",
+      "bytes": 13
+    }
+  }
+}

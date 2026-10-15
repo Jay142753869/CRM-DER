@@ -1,0 +1,122 @@
+{
+  "ICEWS14": {
+    "entities": 7128,
+    "relations": 230,
+    "train_frames": 304,
+    "valid_frames": 30,
+    "static_available": true,
+    "time_unit": 1.0,
+    "test_labels_loaded": false,
+    "cpu_smoke": {
+      "hidden": 32,
+      "history": 3,
+      "timestamp": 19,
+      "rows": 101,
+      "candidates": 7128,
+      "loss": 8.895550727844238,
+      "recent_slots": 1186,
+      "state_slots": 707,
+      "optimizer_created": false
+    }
+  },
+  "ICEWS18": {
+    "entities": 23033,
+    "relations": 256,
+    "train_frames": 240,
+    "valid_frames": 30,
+    "static_available": true,
+    "time_unit": 24.0,
+    "test_labels_loaded": false,
+    "cpu_smoke": {
+      "hidden": 32,
+      "history": 3,
+      "timestamp": 144,
+      "rows": 745,
+      "candidates": 23033,
+      "loss": 10.155434608459473,
+      "recent_slots": 5556,
+      "state_slots": 3347,
+      "optimizer_created": false
+    }
+  },
+  "ICEWS05-15": {
+    "entities": 10488,
+    "relations": 251,
+    "train_frames": 3243,
+    "valid_frames": 404,
+    "static_available": true,
+    "time_unit": 1.0,
+    "test_labels_loaded": false,
+    "cpu_smoke": {
+      "hidden": 32,
+      "history": 3,
+      "timestamp": 14,
+      "rows": 51,
+      "candidates": 10488,
+      "loss": 9.276274681091309,
+      "recent_slots": 661,
+      "state_slots": 439,
+      "optimizer_created": false
+    }
+  },
+  "GDELT": {
+    "entities": 7691,
+    "relations": 240,
+    "train_frames": 2138,
+    "valid_frames": 265,
+    "static_available": true,
+    "time_unit": 15.0,
+    "test_labels_loaded": false,
+    "cpu_smoke": {
+      "hidden": 32,
+      "history": 3,
+      "timestamp": 165,
+      "rows": 290,
+      "candidates": 7691,
+      "loss": 8.972885131835938,
+      "recent_slots": 2214,
+      "state_slots": 1424,
+      "optimizer_created": false
+    }
+  },
+  "YAGO": {
+    "entities": 10623,
+    "relations": 10,
+    "train_frames": 178,
+    "valid_frames": 5,
+    "static_available": true,
+    "time_unit": 1.0,
+    "test_labels_loaded": false,
+    "cpu_smoke": {
+      "hidden": 32,
+      "history": 3,
+      "timestamp": 2,
+      "rows": 198,
+      "candidates": 10623,
+      "loss": 9.399688720703125,
+      "recent_slots": 1071,
+      "state_slots": 304,
+      "optimizer_created": false
+    }
+  },
+  "WIKI": {
+    "entities": 12554,
+    "relations": 24,
+    "train_frames": 211,
+    "valid_frames": 11,
+    "static_available": false,
+    "time_unit": 1.0,
+    "test_labels_loaded": false,
+    "cpu_smoke": {
+      "hidden": 32,
+      "history": 3,
+      "timestamp": 2,
+      "rows": 1512,
+      "candidates": 12554,
+      "loss": 9.33509349822998,
+      "recent_slots": 3550,
+      "state_slots": 1775,
+      "optimizer_created": false
+    }
+  }
+}
