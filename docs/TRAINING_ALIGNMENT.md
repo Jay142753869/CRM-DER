@@ -1,13 +1,13 @@
 # CRM-DER 的模型来源与训练对齐
 
-日期：2026-10-16。用户明确要求独立命名为 CRM-DER，并选择按 QDRL-main-new 的训练协议统一。
+日期：2026-10-16。用户明确要求独立命名为 CRM-DER；训练组织参照 QDRL-main-new，
+后续明确要求将整套损失恢复为 R02 原版。本文以最终选择为准。
 
 ## 模型保持 R02
 
 源码基于 `report/review_20261013/rearchitecture_panel/R02/implementation/QDRL` 的正式工程。
 复制时的逐文件 SHA256 记录于 SOURCE_MANIFEST.json。CRM 核心、模型、分组、工厂以及 CNN/MA/
-ConvTransE 等评分路径保持原实现。唯一的 backbone 改动是将 `log(softmax)` 换为与 baseline 相同的
-`log_softmax`，它改变数值稳定性，不改变数学目标或推理 logits。
+ConvTransE 等评分路径保持原实现。原 R02 的 backbone/model.py 整体恢复，包括 `log(softmax)` NLL。
 
 没有将 baseline 的 main.py 覆盖到 R02。CRM-DER 的 main.py 调用 src.trainer.run，模型工厂始终构造 CRMModel。
 初始化为新模型，不复制旧训练权重，不启用 C2 或长期槽。
@@ -18,9 +18,9 @@ ConvTransE 等评分路径保持原实现。唯一的 backbone 改动是将 `log
 |---|---|---|
 | seed | 43 | 42（baseline 默认，可指定） |
 | 顺序 | shuffled | chronological（与 baseline 相同） |
-| 静态损失 | static>3 时 0.9*main+0.1*static，否则 main | main+0.1*static |
-| 静态 warmup | 无 | 默认 0，可显式开启 |
-| 主/静态 NLL | log(softmax) | log_softmax |
+| 静态损失 | static>3 时 0.9*main+0.1*static，否则 main | 恢复原 R02，同左 |
+| 静态 warmup | 无 | 默认阈值模式不启用 |
+| 主/静态 NLL | log(softmax) | 恢复原 R02，同左 |
 | 早停 | 8 轮无严格改善 | 10 轮下降；相等按 baseline 保存并重置计数 |
 | 学习率调度 | 无 | 默认无，可选 plateau，保存并恢复状态 |
 | 数据目录 | 指向另一个工程 | 本地 ./data 独立副本 |
@@ -40,8 +40,11 @@ baseline 中 `--test-every` 没有控制末尾 `epoch >= 5` 的测试块；那�
 后续优化器状态却继续沿用。因此本工程不复制这段训练轨迹干扰。`--test-every` 仅接受 0，
 训练不读 test；需要评估时显式 `--test --load-model`。这项修正已在聊天中说明。
 
-数学与代码上的统一不代表随机初始化、模块参数和执行顺序逐位等同于 baseline；R02 本来就是另一个架构。
-本工程的新训练应记录为“CRM-DER，baseline 训练协议”，不能冒称复现历史 R02 的 53.0391% test。
+恢复损失不撤销时间顺序、seed42 和早停10等训练组织设置，因此也不构成历史 R02 训练轨迹的逐位复现。
+本工程的新训练应记录为“CRM-DER，baseline 训练组织 + 原 R02 损失”，不能冒称复现历史 R02 的 53.0391% test。
+
+损失的数值语义也按用户要求恢复：原 `log(softmax)` 在极端 logits 下可能下溢，
+回归检查确认这一原始行为；训练中的非有限损失/梯度检查仍保留，以便出现该问题时明确停止并报告。
 
 ## 数据来源
 

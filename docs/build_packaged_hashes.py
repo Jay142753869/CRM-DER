@@ -54,7 +54,10 @@ def digest(relative):
     path = ROOT / relative
     if not path.exists():
         raise FileNotFoundError(relative)
-    return hashlib.sha256(path.read_bytes()).hexdigest()
+    # Git/browser uploads may use CRLF while local source uses LF. Hash the
+    # same source text consistently across platforms without rewriting files.
+    source = path.read_bytes().replace(b'\r\n', b'\n')
+    return hashlib.sha256(source).hexdigest()
 
 
 def build():

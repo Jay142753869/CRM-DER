@@ -80,7 +80,7 @@ class CommandTests(unittest.TestCase):
                            '--add_query', '--test-every', '0', '--run-name', 'icews18_s42'])
         self.assertEqual(Path(args.data_root), Path('data'))
         self.assertEqual(args.train_order, 'chronological')
-        self.assertEqual(args.static_profile, 'fixed_weight')
+        self.assertEqual(args.static_profile, 'baseline_threshold')
         self.assertEqual(args.early_stopping_patience, 10)
         self.assertEqual(args.tie_policy, 'torch_original')
         self.assertEqual(args.seed, 42)
@@ -100,14 +100,28 @@ class CommandTests(unittest.TestCase):
 
 
 class NumericTests(unittest.TestCase):
-    def test_extreme_logits_produce_finite_loss_and_gradients(self):
+    def test_original_nll_preserves_original_underflow_behavior(self):
         scores = torch.tensor([[1000., -1000., 0.], [-1000., 1000., 0.]], requires_grad=True)
         targets = torch.tensor([1, 0])
         loss = BaselineModel.task_loss(scores, targets)
-        self.assertTrue(torch.isfinite(loss).item())
-        self.assertEqual(loss.item(), 2000.)
+        self.assertTrue(torch.isinf(loss).item())
+
+    def test_original_nll_value_and_gradient_at_regular_scores(self):
+        scores = torch.tensor([[0., 0.], [1.0986122886681098, 0.]], requires_grad=True)
+        loss = BaselineModel.task_loss(scores, torch.tensor([0, 1]))
+        self.assertAlmostEqual(loss.item(), 1.0397207708399179, places=6)
         loss.backward()
-        self.assertTrue(torch.isfinite(scores.grad).all().item())
+        torch.testing.assert_close(scores.grad, torch.tensor([[-.25, .25], [.375, -.375]]))
+
+    def test_original_static_threshold_and_gradient(self):
+        main, static = torch.tensor(2., requires_grad=True), torch.tensor(4., requires_grad=True)
+        total = BaselineModel.original_total_loss(main, static)
+        self.assertAlmostEqual(total.item(), 2.2, places=6)
+        total.backward()
+        self.assertAlmostEqual(main.grad.item(), .9, places=6)
+        self.assertAlmostEqual(static.grad.item(), .1, places=6)
+        for value in [2., 3.]:
+            self.assertEqual(BaselineModel.original_total_loss(torch.tensor(2.), torch.tensor(value)).item(), 2.)
 
 
 class DataTests(unittest.TestCase):

@@ -50,8 +50,8 @@ def checkpoint_config(args, model):
             history='strictly_past_real_timestamps_only',
             validation='rolling_observed_strict_real_prefix',
             test='explicit_checkpoint_only; train/valid_never_parse_test',
-            objective='stable_log_softmax_nll' + (' + static:' + args.static_profile if args.add_static_graph else ''),
-            training_reference='QDRL-main-new: chronological, fixed static weight, patience10 defaults',
+            objective='single_nll_log_of_softmax' + (' + static:' + args.static_profile if args.add_static_graph else ''),
+            training_reference='QDRL-main-new chronological/patience10; original R02 loss restored by user',
             partial=bool(args.max_steps or args.max_valid_frames or args.smoke_target_limit),
             full_candidate_axis=True,
             neural_state='recomputed_inside_each_forward; no cross-sample cache'))

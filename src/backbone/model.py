@@ -243,8 +243,8 @@ class BaselineModel(nn.Module):
 
     @staticmethod
     def task_loss(scores, targets):
-        # Match QDRL-main-new's stable NLL formulation across candidate scales.
-        return F.nll_loss(F.log_softmax(scores, dim=1), targets)
+        # Numeric compatibility, including original potential softmax underflow.
+        return F.nll_loss(torch.log(F.softmax(scores, dim=1)), targets)
 
     @staticmethod
     def predict_logprob(scores):

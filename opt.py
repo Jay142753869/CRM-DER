@@ -39,7 +39,7 @@ def parser():
     p.add_argument('--no-query', dest='add_query', action='store_false')
     p.add_argument('--add-static-graph', action='store_true')
     p.add_argument('--static-profile', choices=['baseline_threshold', 'fixed_weight', 'off'],
-                   default='fixed_weight')
+                   default='baseline_threshold')
     p.add_argument('--static-weight', '--static-loss-weight', dest='static_weight', type=float, default=.1)
     p.add_argument('--static-warmup-epochs', type=int, default=0)
     p.add_argument('--static-score-chunk', type=int, default=256)

@@ -4,8 +4,10 @@ CRM-DER（R02）是“统一因果关系事件记忆 + 双端条件读出”的�
 本目录中的 `main.py` 实际构造 R02 的 CRMModel；运行名称、输出和工程名称均为 CRM-DER。
 模型保留 R02 的主干、共享 K/V、输入门控状态槽和双端读出，独立 C2、长期槽默认关闭。
 
-按用户选择，本工程默认采用 `QDRL-main-new/QDRL` 的训练方式：时间顺序遍历训练快照，
-每个快照正反向分别优化，Adam + 固定静态图损失权重 + 完整 valid 选模，早停容忍 10 轮。
+本工程采用 `QDRL-main-new/QDRL` 的训练组织方式：时间顺序遍历训练快照，
+每个快照正反向分别优化，Adam + 完整 valid 选模，早停容忍 10 轮。
+根据用户后续修订，**整套损失已恢复为 R02 原版**：`log(softmax)` NLL，
+静态损失大于 3 时为 `0.9*main+0.1*static`，否则仅 `main`。
 这与历史 R02 已测训练协议不同，新实验不能直接当作原 seed43 结果复现。
 具体差异与证据见 [docs/TRAINING_ALIGNMENT.md](docs/TRAINING_ALIGNMENT.md)。
 
@@ -110,13 +112,16 @@ checkpoint 只能加载本项目或可信的 R02 文件。
 | 学习率 / weight decay / dropout / clip | 0.0005 / 1e-5 / 0.2 / 1 |
 | 训练顺序 | chronological |
 | 静态图 | 需要显式 `--add-static-graph`；WIKI 不加 |
-| 静态损失 | `main + 0.1 * static`；仅正向有静态三元组监督 |
+| NLL | 原 R02 的 `nll_loss(log(softmax(scores)), targets)` |
+| 静态损失 | 原 R02 阈值加权：static>3 时 `0.9*main+0.1*static`，否则 main；仅正向有静态监督 |
 | 选模 / 早停 | 每轮完整 valid，整体 filtered MRR，连续 10 轮下降 |
 | scheduler | none；可选 `--lr-scheduler plateau` |
 | CRM 状态 / 门控 | on / input，状态秩 8×32，读出 hidden64 |
 | C2 / 长期槽 | off / off |
 
-可调整 `--static-loss-weight`、`--static-warmup-epochs`；`--static-weight` 是同义参数。
+默认 `--static-profile baseline_threshold` 恢复原 R02 公式，不使用固定权重和 warmup。
+`--static-loss-weight`、`--static-warmup-epochs` 仅在显式 `--static-profile fixed_weight` 对照模式下生效；
+`--static-weight` 是同义参数。此对照模式不属于当前默认训练。
 可选 `--state-mode off`、`--state-gate global`、`--enable-c2` 做独立消融。
 `--add_query` 与 `--add-query` 同义，`--load-model` 与 `--checkpoint` 同义。
 关系预测、GRU、外部预处理历史图与长期槽未由 R02 实现，不会静默改成其他模型。

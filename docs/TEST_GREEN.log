@@ -5,14 +5,16 @@ test_unsupported_modes_explain_the_limitation (test_standalone.CommandTests) ...
 test_unverified_window_can_be_inherited_from_checkpoint (test_standalone.CommandTests) ... ok
 test_unverified_windows_require_explicit_value_for_fresh_training (test_standalone.CommandTests) ... ok
 test_all_six_local_train_valid_datasets (test_standalone.DataTests) ... ok
-test_changed_explicit_resume_mechanism_is_rejected (test_standalone.LifecycleTests) ... D:\improve-QDRL\CRM-DER\src\crm\core.py:434: UserWarning: scatter_reduce() is in beta and the API may change at any time. (Triggered internally at C:\cb\pytorch_1000000000000\work\aten\src\ATen\native\TensorAdvancedIndexing.cpp:1615.)
+test_changed_explicit_resume_mechanism_is_rejected (test_standalone.LifecycleTests) ... D:\improve-QDRL\tmp\CRM-DER-loss-upload-20261016\src\crm\core.py:434: UserWarning: scatter_reduce() is in beta and the API may change at any time. (Triggered internally at C:\cb\pytorch_1000000000000\work\aten\src\ATen\native\TensorAdvancedIndexing.cpp:1615.)
   seg_max = seg_max.scatter_reduce(0, owner, logits, reduce='amax', include_self=True)
 ok
 test_real_main_cli_creates_local_models_and_result (test_standalone.LifecycleTests) ... ok
 test_train_resume_and_minimal_test_restore_static_identity (test_standalone.LifecycleTests) ... ok
-test_extreme_logits_produce_finite_loss_and_gradients (test_standalone.NumericTests) ... ok
+test_original_nll_preserves_original_underflow_behavior (test_standalone.NumericTests) ... ok
+test_original_nll_value_and_gradient_at_regular_scores (test_standalone.NumericTests) ... ok
+test_original_static_threshold_and_gradient (test_standalone.NumericTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 11 tests in 11.605s
+Ran 13 tests in 11.194s
 
 OK
